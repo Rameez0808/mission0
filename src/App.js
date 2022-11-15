@@ -1,11 +1,15 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import "./App.css";
-import TopNavBar from "./Components/TopNavBar/TopNavBar";
+import Card from "./Components/CardGroup/Card";
+import Header from "./Components/Header/Header";
 
 function App() {
+  const [searchSkill, setSearchSkill] = useState("");
+  console.log(searchSkill);
   return (
     <Fragment>
-      <TopNavBar />
+      <Header searchSkill={searchSkill} setSearchSkill={setSearchSkill} />
+      <Card searchSkill={searchSkill} />
     </Fragment>
   );
 }
