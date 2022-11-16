@@ -12,6 +12,9 @@ module.exports = {
       width: {
         90: "22rem",
       },
+      height: {
+        tall: "32rem",
+      },
     },
     screens: {
       xs: "400px",

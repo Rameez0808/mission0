@@ -16,15 +16,15 @@ const Skills = [
 
 const Card = ({ searchSkill }) => {
   return (
-    <div className="card-group flex flex-wrap gap-y-8 justify-between lg:px-32 px-16 w-full mt-20">
+    <div className="card-group flex flex-wrap gap-y-8 gap-x-6 justify-between lg:px-32 px-16 w-full my-20">
       {searchSkill
         ? Skills.map((skill, index) => {
-            let lowerCaseSearchSkill = searchSkill.toLowerCase();
-            let lowerCaseSkillType = skill.type.toLowerCase();
-            let lowerCaseSkill = skill.name.toLowerCase();
+            let lowerCaseSearchSkill = searchSkill.toLowerCase(); // changing to lowerCase
+            let lowerCaseSkillType = skill.type.toLowerCase(); // changing to lowerCase
+            let lowerCaseSkill = skill.name.toLowerCase(); // changing to lowerCase
             return (
-              (lowerCaseSkill.includes(lowerCaseSearchSkill) ||
-                lowerCaseSkillType.includes(lowerCaseSearchSkill)) && (
+              (lowerCaseSkill.includes(lowerCaseSearchSkill) || // matching skills or
+                lowerCaseSkillType.includes(lowerCaseSearchSkill)) && ( // matching skill type
                 <CardItem key={index} name={skill.name} type={skill.type} />
               )
             );

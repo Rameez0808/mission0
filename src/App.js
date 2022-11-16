@@ -4,11 +4,12 @@ import Card from "./Components/CardGroup/Card";
 import Header from "./Components/Header/Header";
 
 function App() {
+  // Variable to input value from the search bar
   const [searchSkill, setSearchSkill] = useState("");
-  console.log(searchSkill);
+
   return (
     <Fragment>
-      <Header searchSkill={searchSkill} setSearchSkill={setSearchSkill} />
+      <Header setSearchSkill={setSearchSkill} />
       <Card searchSkill={searchSkill} />
     </Fragment>
   );
