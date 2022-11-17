@@ -3,3 +3,5 @@
 // 3. header banner is covering 50% of screen on Android. [Kate]
 // 4. Spell check Hi/Hy and uneven margin between Hy I'm, Software and Developer. [Mathew] -> Done
 // 5. Face image too small [Mathew]
+// 6. Add cursor as pointer on Nav-Links -> [Jordan]
+// 7. Hover effect on Login button ->  [Jordan]

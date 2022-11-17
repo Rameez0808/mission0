@@ -2,7 +2,7 @@ import React from "react";
 
 const Logo = () => {
   return (
-    <div className="navbar-logo flex items-center">
+    <div className="navbar-logo flex items-center cursor-pointer">
       <img
         className="h-14 w-14 rounded-full"
         src="./Images/karan-face.jpg"

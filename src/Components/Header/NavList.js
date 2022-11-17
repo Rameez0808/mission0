@@ -12,7 +12,7 @@ const NavList = ({ showNavLink }) => {
       <NavItem item={"Contact"} />
       <NavItem item={"About"} />
 
-      <button className="nav-btn border-2 md:text-sm text-2xl font-bold rounded-lg px-4 py-2">
+      <button className="nav-btn hover:text-red-700 hover:border-red-700 border-2 md:text-sm text-2xl font-bold rounded-lg px-4 py-2">
         Login
       </button>
     </ul>
